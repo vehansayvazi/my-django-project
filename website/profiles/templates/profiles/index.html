@@ -1,0 +1,5 @@
+<ul>
+    {% for group in all_groups %}
+    <li><a href = "/profiles/{{ group.id }}/">{{group.groupName }}</a></li>
+    {% endfor %}
+</ul>
