@@ -1,9 +1,0 @@
-<h1>{{team.name}}</h1>
-
-<ul>
-    Choose Player:
-    {% for player in all_player %}
-    <li><a href = "/profiles/player_detail/{{ player.id }}/">{{ player.firstName }}  {{ player.lastName }}</a></li>
-    {% endfor %}
-
-</ul>
