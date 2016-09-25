@@ -1,6 +1,7 @@
 from django.contrib import admin
-from .models import Group
-from .models import Person
+from .models import Program, Team, Player, Coach
 
-admin.site.register(Group)
-admin.site.register(Person)
+admin.site.register(Program)
+admin.site.register(Team)
+admin.site.register(Player)
+admin.site.register(Coach)
