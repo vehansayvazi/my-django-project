@@ -1,554 +1,207 @@
-<!doctype html>
-<html>
-{% load staticfiles %}
-
-
-    <head>
-
-        <title>intelliHoops</title>
-
-        <!-- Latest compiled and minified CSS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-        <!-- Optional theme -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-
-        <link rel="stylesheet" type="text/css" href="{% static 'profiles/style.css' %}" />
-
-
-
-    </head>
-
-
-
-<link>
-
-    <body>
-
-            <header>
-
-                <center><img src="{% static 'profiles/images/intelliHoops_FullLogo_WEB.png' %}" alt="full logo" style="width:600px;height:100px;"></center>
-
-            </header>
-
-
-<center><h2>LA Select Basketball</h2></center>
-
-
-
-
-
-<div class="container-fluid">
-        <a href="#8uDrop" class="list-group-item list-group-item" data-toggle="collapse"><h1>8u Team</h1></a>
-        <div class="collapse" id="8uDrop">
-                <table class="table table-hover">
-                {% if team8u %}
-                    <tbody>
-                        <tr>
-                        {% for instance in team8u %}
-                        <td>{{ instance.number}}</td>
-                        <td>{{ instance }}</td>
-                        <td>{{ instance.team }}</td>
-                        </tr>
-                        {% endfor %}
-                    </tbody>
-                {% endif %}
-                </table>
-        </div>
-
-        <a href="#9uDrop" class="list-group-item list-group-item" data-toggle="collapse"><h1>9u Team</h1></a>
-        <div class="collapse" id="9uDrop">
-                <table class="table table-hover">
-                {% if team9u %}
-                    <tbody>
-                        <tr>
-                        {% for instance in team9u %}
-                        <td>{{ instance.number}}</td>
-                        <td>{{ instance }}</td>
-                        <td>{{ instance.team }}</td>
-                        </tr>
-                        {% endfor %}
-                    </tbody>
-                {% endif %}
-                </table>
-        </div>
-
-
-        <a href="#10uDrop" class="list-group-item list-group-item" data-toggle="collapse"><h1>10u Team</h1></a>
-        <div class="collapse" id="10uDrop">
-                <table class="table table-hover">
-                {% if team10u %}
-                    <tbody>
-                        <tr>
-                        {% for instance in team10u %}
-                        <td>{{ instance.number}}</td>
-                        <td>{{ instance }}</td>
-                        <td>{{ instance.team }}</td>
-                        </tr>
-                        {% endfor %}
-                    </tbody>
-                {% endif %}
-                </table>
-        </div>
-
-
-        <a href="#11uDrop" class="list-group-item list-group-item" data-toggle="collapse"><h1>11u Team</h1></a>
-        <div class="collapse" id="11uDrop">
-                <table class="table table-hover">
-                {% if team11u %}
-                    <tbody>
-                        <tr>
-                        {% for instance in team11u %}
-                        <td>{{ instance.number}}</td>
-                        <td>{{ instance }}</td>
-                        <td>{{ instance.team }}</td>
-                        </tr>
-                        {% endfor %}
-                    </tbody>
-                {% endif %}
-                </table>
-        </div>
-
-        <a href="#13uDrop" class="list-group-item list-group-item" data-toggle="collapse"><h1>13u Team</h1></a>
-        <div class="collapse" id="13uDrop">
-                <table class="table table-hover">
-                {% if team13u %}
-                    <tbody>
-                        <tr>
-                        {% for instance in team13u %}
-                        <td>{{ instance.number}}</td>
-                        <td>{{ instance }}</td>
-                        <td>{{ instance.team }}</td>
-                        </tr>
-                        {% endfor %}
-                    </tbody>
-                {% endif %}
-                </table>
-        </div>
-</div>
-
-
-
-
-
-
-        <!--<div class="container">-->
-            <!--<h1>8u Team</h1>-->
-                <!--<table class="table table-hover">-->
-                <!--{% if team8u %}-->
-                    <!--<tbody>-->
-                        <!--<tr>-->
-                        <!--{% for instance in team8u %}-->
-                        <!--<td>{{ instance.number}}</td>-->
-                        <!--<td>{{ instance }}</td>-->
-                        <!--<td>{{ instance.team }}</td>-->
-                        <!--</tr>-->
-                        <!--{% endfor %}-->
-                    <!--</tbody>-->
-                <!--{% endif %}-->
-                <!--</table>-->
-            <!--</div>-->
-
-
-            <!--<div class="container">-->
-            <!--<h1>9u Team</h1>-->
-                <!--<table class="table table-hover">-->
-                <!--{% if team9u %}-->
-                    <!--<tbody>-->
-                        <!--<tr>-->
-                        <!--{% for instance in team9u %}-->
-                        <!--<td>{{ instance.number}}</td>-->
-                        <!--<td>{{ instance }}</td>-->
-                        <!--<td>{{ instance.team }}</td>-->
-                        <!--</tr>-->
-                        <!--{% endfor %}-->
-                    <!--</tbody>-->
-                <!--{% endif %}-->
-                <!--</table>-->
-            <!--</div>-->
-
-            <!--<div class="container">-->
-            <!--<h1>10u Team</h1>-->
-                <!--<table class="table table-hover">-->
-                <!--{% if team10u %}-->
-                    <!--<tbody>-->
-                        <!--<tr>-->
-                        <!--{% for instance in team10u %}-->
-                        <!--<td>{{ instance.number}}</td>-->
-                        <!--<td>{{ instance }}</td>-->
-                        <!--<td>{{ instance.team }}</td>-->
-                        <!--</tr>-->
-                        <!--{% endfor %}-->
-                    <!--</tbody>-->
-                <!--{% endif %}-->
-                <!--</table>-->
-            <!--</div>-->
-
-            <!--<div class="container">-->
-            <!--<h1>11u Team</h1>-->
-                <!--<table class="table table-hover">-->
-                <!--{% if team1u %}-->
-                    <!--<tbody>-->
-                        <!--<tr>-->
-                        <!--{% for instance in team11u %}-->
-                        <!--<td>{{ instance.number}}</td>-->
-                        <!--<td>{{ instance }}</td>-->
-                        <!--<td>{{ instance.team }}</td>-->
-                        <!--</tr>-->
-                        <!--{% endfor %}-->
-                    <!--</tbody>-->
-                <!--{% endif %}-->
-                <!--</table>-->
-            <!--</div>-->
-
-            <!--<div class="container">-->
-            <!--<h1>12u Team</h1>-->
-                <!--<table class="table table-hover">-->
-                <!--{% if team12u %}-->
-                    <!--<tbody>-->
-                        <!--<tr>-->
-                        <!--{% for instance in team12u %}-->
-                        <!--<td>{{ instance.number}}</td>-->
-                        <!--<td>{{ instance }}</td>-->
-                        <!--<td>{{ instance.team }}</td>-->
-                        <!--</tr>-->
-                        <!--{% endfor %}-->
-                    <!--</tbody>-->
-                <!--{% endif %}-->
-                <!--</table>-->
-            <!--</div>-->
-
-                        <!--<div class="container">-->
-            <!--<h1>13u Team</h1>-->
-                <!--<table class="table table-hover">-->
-                <!--{% if team13u %}-->
-                    <!--<tbody>-->
-                        <!--<tr>-->
-                        <!--{% for instance in team13u %}-->
-                        <!--<td>{{ instance.number}}</td>-->
-                        <!--<td>{{ instance }}</td>-->
-                        <!--<td>{{ instance.team }}</td>-->
-                        <!--</tr>-->
-                        <!--{% endfor %}-->
-                    <!--</tbody>-->
-                <!--{% endif %}-->
-                <!--</table>-->
-            <!--</div>-->
-
-
-
-
-
-            <!--{% for team in all_team %}-->
-<!--<div class="container">-->
-  <!--<h2>{{team.name}}</h2>-->
-  <!--<p>note</p>-->
-  <!--<table class="table table-hover">-->
-    <!--<thead>-->
-      <!--<tr>-->
-        <!--<th>Number</th>-->
-        <!--<th>Firstname</th>-->
-        <!--<th>Lastname</th>-->
-      <!--</tr>-->
-    <!--</thead>-->
-    <!--{% for player in all_player %}-->
-      <!--{% if player.team == team.name %}-->
-
-    <!--<tbody>-->
-      <!--<tr>-->
-        <!--<td>{{ player.number }}</td>-->
-        <!--<td>{{ player.firstName }}</td>-->
-        <!--<td>{{ player.lastName }}</td>-->
-      <!--</tr>-->
-      <!--{% endif %}-->
-    <!--</tbody>-->
-
-   <!--{% endfor %}-->
-  <!--</table>-->
-<!--</div>-->
-<!--{% endfor %}-->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!--
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-md-2">
-
-      <div id="MainMenu">
-        <div class="list-group panel">
-
-
-
-            <a href="#demo3" class="list-group-item list-group-item-success" data-toggle="collapse" data-parent="#MainMenu">Item 3</a>
-            <div class="collapse" id="demo3">
-
-                <a href="#SubMenu1" class="list-group-item" data-toggle="collapse" data-parent="#SubMenu1">Subitem 1 <i class="fa fa-caret-down"></i></a>
-                <div class="collapse list-group-submenu" id="SubMenu1">
-                    <a href="#" class="list-group-item" data-parent="#SubMenu1">Subitem 1 a</a>
-
-                    <a href="#" class="list-group-item" data-parent="#SubMenu1">Subitem 2 b</a>
-                        <a href="#SubSubMenu1" class="list-group-item" data-toggle="collapse" data-parent="#SubSubMenu1">Subitem 3 c <i class="fa fa-caret-down"></i></a>
-                        <div class="collapse list-group-submenu list-group-submenu-1" id="SubSubMenu1">
-                            <a href="#" class="list-group-item" data-parent="#SubSubMenu1">Sub sub item 1</a>
-                            <a href="#" class="list-group-item" data-parent="#SubSubMenu1">Sub sub item 2</a>
-                        </div>
-
-                    <a href="#" class="list-group-item" data-parent="#SubMenu1">Subitem 4 d</a>
-
-                </div>
-
-
-                <a href="javascript:;" class="list-group-item">Subitem 2</a>
-                <a href="javascript:;" class="list-group-item">Subitem 3</a>
-
-            </div>
-
-
-            <a href="#demo4" class="list-group-item list-group-item" data-toggle="collapse" data-parent="#MainMenu">Item 4</a>
-            <div class="collapse" id="demo4">
-                <a href="" class="list-group-item">Subitem 1</a>
-                <a href="" class="list-group-item">Subitem 2</a>
-                <a href="" class="list-group-item">Subitem 3</a>
-            </div>
-
-            <a href="#demo5" class="list-group-item list-group-item" data-toggle="collapse" data-parent="#MainMenu">Item 5</a>
-            <div class="collapse" id="demo5">
-                <a href="#" class="list-group-item">Subitem 1</a>
-                <a href="" class="list-group-item">Subitem 2</a>
-                <a href="" class="list-group-item">Subitem 3</a>
-            </div>
-
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
--->
-
-
-
-
-<!--
-            <div>
-
-
-                    {% for program in all_program %}
-                    <!-- <li><a href = "/profiles/program_detail/{{ program.id }}/">{{program.name }}</a></li>
-
-                    <a href="#demo22" class="list-group-item list-group-item" data-toggle="collapse" data-parent="#MainMenu">{{program.name}}</a>
-
-
-
-                                <div class="collapse" id="demo22">
-
-                                    <a href="#" class="list-group-item">Subitem 1</a>
-
-
-
-                        </div>
-
-
+{% extends "profiles/base.html" %}
+
+    {% block content %}
+
+    <!--Roster drop down displays-->
+    <div class="container-fluid">
+
+        <center><h1>Program Rosters</h1></center>
+
+        <h3>Elementary School Division</h3>
+
+        <a href="#7uDrop" class="list-group-item list-group-item" data-toggle="collapse"><b>7u/1st Grade Team</b></a>
+        <div class="collapse" id="7uDrop">
+            <table class="table table-hover">
+                {% if team7u %}
+                <tbody>
+                <tr>
+                    {% for instance in team7u %}
+                    <td>{{ instance.number}}</td>
+                    <td>{{ instance }}</td>
+                    <td>{{ instance.team }}</td>
+                </tr>
                     {% endfor %}
-
-
-
-
-            </div>
-
-
--->
-
-
-
-
-
-
-
-
-                            <!--<center><h1>&#45;&#45;&#45;&#45;&#45;&#45;test-&#45;&#45;&#45;&#45;&#45;&#45;</h1></center>-->
-
-            <!--{% for program in all_program %}-->
-
-            <!--<h1><a href="#demo33" class="list-group-item list-group-item-success" data-toggle="collapse" data-parent="#MainMenu">{{program.name}}</a></h1>-->
-            <!--<div class="collapse" id="demo33">-->
-
-                <!--{% for team in all_team %}-->
-                <!--<h3><a href="#SubMenu11" class="list-group-item" data-toggle="collapse" data-parent="#SubMenu1">{{team.name}} <i class="fa fa-caret-down"></i></a></h3>-->
-                <!--<div class="collapse list-group-submenu" id="SubMenu11">-->
-
-                        <!--{% for player in all_player %}-->
-                        <!--<a href="#SubSubMenu11" class="list-group-item" data-toggle="collapse" data-parent="#SubSubMenu1">{{player.number}} {{player.firstName}} {{player.lastName}}<i class="fa fa-caret-down"></i></a>-->
-                        <!--<div class="collapse list-group-submenu list-group-submenu-1" id="SubSubMenu11">-->
-
-                            <!--&lt;!&ndash;<a href="#" class="list-group-item" data-parent="#SubSubMenu11">Sub sub item 1</a>&ndash;&gt;-->
-
-                        <!--</div>-->
-                        <!--{% endfor %}-->
-                <!--</div>-->
-                <!--{% endfor %}-->
-            <!--</div>-->
-            <!--{% endfor %}-->
-
-                            <!--<center><h1>&#45;&#45;&#45;&#45;&#45;&#45;test-&#45;&#45;&#45;&#45;&#45;&#45;</h1></center>-->
-
-            <!--{% for team in all_team %}-->
-            <!--<h1><a href="#demo333" class="list-group-item list-group-item-success" data-toggle="collapse" data-parent="#MainMenu">{{team.name}}</a></h1>-->
-            <!--<div class="collapse" id="demo333">-->
-                <!--{% for player in all_player %}-->
-                <!--<h3><a href="#SubMenu111" class="list-group-item" data-toggle="collapse" data-parent="#SubMenu1">{{player.name}} <i class="fa fa-caret-down"></i></a></h3>-->
-                <!--<div class="collapse list-group-submenu" id="SubMenu111">-->
-
-                        <!--{% for player in all_player %}-->
-                        <!--<a href="#SubSubMenu111" class="list-group-item" data-toggle="collapse" data-parent="#SubSubMenu1">{{player.number}} {{player.firstName}} {{player.lastName}}<i class="fa fa-caret-down"></i></a>-->
-                        <!--<div class="collapse list-group-submenu list-group-submenu-1" id="SubSubMenu111">-->
-
-                            <!--&lt;!&ndash;<a href="#" class="list-group-item" data-parent="#SubSubMenu11">Sub sub item 1</a>&ndash;&gt;-->
-
-                        <!--</div>-->
-                        <!--{% endfor %}-->
-                <!--</div>-->
-                <!--{% endfor %}-->
-
-            <!--</div>-->
-            <!--{% endfor %}-->
-
-                            <!--<center><h1>&#45;&#45;&#45;&#45;&#45;&#45;test-&#45;&#45;&#45;&#45;&#45;&#45;</h1></center>-->
-
-
-
-
-
-
-<!--<div class="container-fluid">-->
-  <!--<div class="row">-->
-    <!--<div class="col-md-2">-->
-
-      <!--<div id="MainMenu">-->
-        <!--<div class="list-group panel">-->
-
-
-
-            <!--<a href="#demo3" class="list-group-item list-group-item-success" data-toggle="collapse" data-parent="#MainMenu">Item 3</a>-->
-            <!--<div class="collapse" id="demo3">-->
-
-                <!--<a href="#SubMenu1" class="list-group-item" data-toggle="collapse" data-parent="#SubMenu1">Subitem 1 <i class="fa fa-caret-down"></i></a>-->
-                <!--<div class="collapse list-group-submenu" id="SubMenu1">-->
-                    <!--<a href="#" class="list-group-item" data-parent="#SubMenu1">Subitem 1 a</a>-->
-
-                    <!--<a href="#" class="list-group-item" data-parent="#SubMenu1">Subitem 2 b</a>-->
-                        <!--<a href="#SubSubMenu1" class="list-group-item" data-toggle="collapse" data-parent="#SubSubMenu1">Subitem 3 c <i class="fa fa-caret-down"></i></a>-->
-                        <!--<div class="collapse list-group-submenu list-group-submenu-1" id="SubSubMenu1">-->
-                            <!--<a href="#" class="list-group-item" data-parent="#SubSubMenu1">Sub sub item 1</a>-->
-                            <!--<a href="#" class="list-group-item" data-parent="#SubSubMenu1">Sub sub item 2</a>-->
-                        <!--</div>-->
-
-                    <!--<a href="#" class="list-group-item" data-parent="#SubMenu1">Subitem 4 d</a>-->
-
-                <!--</div>-->
-
-
-                <!--<a href="javascript:;" class="list-group-item">Subitem 2</a>-->
-                <!--<a href="javascript:;" class="list-group-item">Subitem 3</a>-->
-
-            <!--</div>-->
-
-
-            <!--<a href="#demo4" class="list-group-item list-group-item" data-toggle="collapse" data-parent="#MainMenu">Item 4</a>-->
-            <!--<div class="collapse" id="demo4">-->
-                <!--<a href="" class="list-group-item">Subitem 1</a>-->
-                <!--<a href="" class="list-group-item">Subitem 2</a>-->
-                <!--<a href="" class="list-group-item">Subitem 3</a>-->
-            <!--</div>-->
-
-            <!--<a href="#demo5" class="list-group-item list-group-item" data-toggle="collapse" data-parent="#MainMenu">Item 5</a>-->
-            <!--<div class="collapse" id="demo5">-->
-                <!--<a href="#" class="list-group-item">Subitem 1</a>-->
-                <!--<a href="" class="list-group-item">Subitem 2</a>-->
-                <!--<a href="" class="list-group-item">Subitem 3</a>-->
-            <!--</div>-->
-
-        <!--</div>-->
-      <!--</div>-->
-    <!--</div>-->
-  <!--</div>-->
-<!--</div>-->
-                            <!--<center><h1>&#45;&#45;&#45;&#45;&#45;&#45;newtest-&#45;&#45;&#45;&#45;&#45;&#45;</h1></center>-->
-
-<!--<div class="container-fluid">-->
-     <!--<a href="#13uDrop" class="list-group-item list-group-item" data-toggle="collapse"><h1>13u Team</h1></a>-->
-     <!--<div class="collapse" id="13uDrop">-->
-                <!--<table class="table table-hover">-->
-                <!--{% if team13u %}-->
-                    <!--<tbody>-->
-                        <!--<tr>-->
-                        <!--{% for instance in team13u %}-->
-                        <!--<td>{{ instance.number}}</td>-->
-                        <!--<td>{{ instance }}</td>-->
-                        <!--<td>{{ instance.team }}</td>-->
-                        <!--</tr>-->
-                        <!--{% endfor %}-->
-                    <!--</tbody>-->
-                <!--{% endif %}-->
-                <!--</table>-->
-<!--</div>-->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            <footer>
-                        <center> 2016 intelliHoops </center>
-            </footer>
-
-        <!-- Latest compiled and minified JavaScript -->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
-
-
-    </body>
-</html>
+                </tbody>
+                {% endif %}
+            </table>
+        </div>
+
+        <a href="#8uDrop" class="list-group-item list-group-item" data-toggle="collapse"><b>8u/2nd Grade Team</b></a>
+        <div class="collapse" id="8uDrop">
+            <table class="table table-hover">
+                {% if team8u %}
+                <tbody>
+                <tr>
+                    {% for instance in team8u %}
+                    <td>{{ instance.number}}</td>
+                    <td>{{ instance }}</td>
+                    <td>{{ instance.team }}</td>
+                </tr>
+                    {% endfor %}
+                </tbody>
+                {% endif %}
+            </table>
+        </div>
+
+        <a href="#9uDrop" class="list-group-item list-group-item" data-toggle="collapse"><b>9u/3rd Grade Team</b></a>
+        <div class="collapse" id="9uDrop">
+            <table class="table table-hover">
+                {% if team9u %}
+                <tbody>
+                <tr>
+                    {% for instance in team9u %}
+                    <td>{{ instance.number}}</td>
+                    <td>{{ instance }}</td>
+                    <td>{{ instance.team }}</td>
+                </tr>
+                    {% endfor %}
+                </tbody>
+                {% endif %}
+            </table>
+        </div>
+
+        <a href="#10uDrop" class="list-group-item list-group-item" data-toggle="collapse"><b>10u/4th Grade Team</b></a>
+        <div class="collapse" id="10uDrop">
+            <table class="table table-hover">
+                {% if team10u %}
+                <tbody>
+                <tr>
+                    {% for instance in team10u %}
+                    <td>{{ instance.number}}</td>
+                    <td>{{ instance }}</td>
+                    <td>{{ instance.team }}</td>
+                </tr>
+                    {% endfor %}
+                </tbody>
+                {% endif %}
+            </table>
+        </div>
+
+        <a href="#11uDrop" class="list-group-item list-group-item" data-toggle="collapse"><b>11u/5th Grade Team</b></a>
+        <div class="collapse" id="11uDrop">
+            <table class="table table-hover">
+                {% if team11u %}
+                <tbody>
+                <tr>
+                    {% for instance in team11u %}
+                    <td>{{ instance.number}}</td>
+                    <td>{{ instance }}</td>
+                    <td>{{ instance.team }}</td>
+                </tr>
+                    {% endfor %}
+                </tbody>
+                {% endif %}
+            </table>
+        </div>
+
+        <h3>Middle School Division</h3>
+
+        <a href="#12uDrop" class="list-group-item list-group-item" data-toggle="collapse"><b>12u/6th Grade Team</b></a>
+        <div class="collapse" id="12uDrop">
+            <table class="table table-hover">
+                {% if team12u %}
+                <tbody>
+                <tr>
+                    {% for instance in team12u %}
+                    <td>{{ instance.number}}</td>
+                    <td>{{ instance }}</td>
+                    <td>{{ instance.team }}</td>
+                </tr>
+                    {% endfor %}
+                </tbody>
+                {% endif %}
+            </table>
+        </div>
+
+        <a href="#13uDrop" class="list-group-item list-group-item" data-toggle="collapse"><b>13u/7th Grade Team</b></a>
+        <div class="collapse" id="13uDrop">
+            <table class="table table-hover">
+                {% if team13u %}
+                <tbody>
+                <tr>
+                    {% for instance in team13u %}
+                    <td>{{ instance.number}}</td>
+                    <td>{{ instance }}</td>
+                    <td>{{ instance.team }}</td>
+                </tr>
+                    {% endfor %}
+                </tbody>
+                {% endif %}
+            </table>
+        </div>
+
+        <a href="#14uDrop" class="list-group-item list-group-item" data-toggle="collapse"><b>14u/8th Grade Team</b></a>
+        <div class="collapse" id="14uDrop">
+            <table class="table table-hover">
+                {% if team14u %}
+                <tbody>
+                <tr>
+                    {% for instance in team14u %}
+                    <td>{{ instance.number}}</td>
+                    <td>{{ instance }}</td>
+                    <td>{{ instance.team }}</td>
+                </tr>
+                    {% endfor %}
+                </tbody>
+                {% endif %}
+            </table>
+        </div>
+
+        <h3>High School Division</h3>
+
+        <a href="#15uDrop" class="list-group-item list-group-item" data-toggle="collapse"><b>15u/9th Grade Team</b></a>
+        <div class="collapse" id="15uDrop">
+            <table class="table table-hover">
+                {% if team15u %}
+                <tbody>
+                <tr>
+                    {% for instance in team15u %}
+                    <td>{{ instance.number}}</td>
+                    <td>{{ instance }}</td>
+                    <td>{{ instance.team }}</td>
+                </tr>
+                    {% endfor %}
+                </tbody>
+                {% endif %}
+            </table>
+        </div>
+
+        <a href="#16uDrop" class="list-group-item list-group-item" data-toggle="collapse"><b>16u/10th Grade Team</b></a>
+        <div class="collapse" id="16uDrop">
+            <table class="table table-hover">
+                {% if team16u %}
+                <tbody>
+                <tr>
+                    {% for instance in team16u %}
+                    <td>{{ instance.number}}</td>
+                    <td>{{ instance }}</td>
+                    <td>{{ instance.team }}</td>
+                </tr>
+                    {% endfor %}
+                </tbody>
+                {% endif %}
+            </table>
+        </div>
+
+        <a href="#17uDrop" class="list-group-item list-group-item" data-toggle="collapse"><b>17u/11th Grade Team</b></h1></a>
+        <div class="collapse" id="17uDrop">
+            <table class="table table-hover">
+                {% if team16u %}
+                <tbody>
+                <tr>
+                    {% for instance in team17u %}
+                    <td>{{ instance.number}}</td>
+                    <td>{{ instance }}</td>
+                    <td>{{ instance.team }}</td>
+                </tr>
+                    {% endfor %}
+                </tbody>
+                {% endif %}
+            </table>
+        </div>
+
+    </div>
+
+
+
+    {% endblock content %}

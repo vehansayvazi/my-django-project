@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+{% load staticfiles %}
+
+    <head>
+        <title>intelliHoops</title>
+
+        <!--favicon-->
+        <link rel="apple-touch-icon" sizes="180x180" href="{% static 'profiles/images/apple-touch-icon.png' %}">
+        <link rel="icon" type="image/png" href="{% static 'profiles/images/favicon-32x32.png' %}" sizes="32x32">
+        <link rel="icon" type="image/png" href="{% static 'profiles/images/favicon-16x16.png' %}" sizes="16x16">
+        <link rel="manifest" href="{% static 'profiles/images/manifest.json' %}">
+        <link rel="mask-icon" href="{% static 'profiles/images/safari-pinned-tab.svg' %}" color="#a84141">
+        <link rel="shortcut icon" href="{% static 'profiles/images/favicon.ico' %}">
+        <meta name="apple-mobile-web-app-title" content="intelliHoops">
+        <meta name="application-name" content="intelliHoops">
+        <meta name="msapplication-config" content="{% static 'profiles/images/browserconfig.xml' %}">
+        <meta name="theme-color" content="#ffffff">
+
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+        <link rel="stylesheet" type="text/css" href="{% static 'profiles/style.css' %}" />
+
+    </head>
+
+    <body>
+
+            <header>
+
+                <center><img src="{% static 'profiles/images/intelliHoops_FullLogo_WEB.png' %}" alt="full logo" style="width:600px;height:100px;"></center>
+
+            </header>
+
+    {% block content %} {% endblock content %}
+
+
+    <footer>
+        <center> 2016 intelliHoops </center>
+    </footer>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    </body>
+</html>
+
+
+
+
